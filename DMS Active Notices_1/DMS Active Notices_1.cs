@@ -69,7 +69,7 @@ namespace DMS_Active_Notices_1
                 {
                     TestResult testResult = new TestResult
                     {
-                        ParameterName = "Active Notices",
+                        ParameterName = "DMS Active Notices",
                         DmaName = agent.Item1,
                         ReceivedValue = Convert.ToString(activeAlarms.Count(x => x.Severity == "Notice" && agent.Item2.Equals(x.HostingAgentID))),
                     };
